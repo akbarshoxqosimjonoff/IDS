@@ -1,0 +1,54 @@
+.section-hero {
+  //   visibility: hidden;
+  background: rgb(72, 72, 72);
+  height: 2000px;
+}
+
+// main {
+//   background: rgb(72, 72, 72);
+// }
+.main-bg-color-1 {
+  @include mobile() {
+    display: none;
+  }
+  /* Ellipse 94 */
+  position: absolute;
+  width: 600px;
+  height: 2000px;
+  //   left: -200px;
+  //   right: 1765.93px;
+  top: -350px;
+  //   bottom: 6502.61px;
+  transform: rotate(-36.11deg);
+  filter: blur(455.7px);
+  background: linear-gradient(
+    177.9deg,
+    rgba(31, 114, 79, 0.56) 17.878%,
+    rgba(67, 45, 130, 0.34) 99.867%
+  );
+  @include tablet() {
+    display: none;
+  }
+}
+
+.main-bg-color-2 {
+  @include mobile() {
+    display: none;
+  }
+  /* Ellipse 76 */
+  position: absolute;
+  width: 504.64px;
+  height: 994.64px;
+  left: 810px;
+  //   right: -501.86px;
+  top: -500px;
+  //   bottom: 9266.44px;
+  transform: rotate(3.07deg);
+  filter: blur(710.8px);
+  background: rgb(42, 133, 111);
+  opacity: 0.56;
+  overflow-x: hidden;
+  @include tablet() {
+    display: none;
+  }
+}

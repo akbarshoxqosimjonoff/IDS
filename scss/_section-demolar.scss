@@ -1,0 +1,100 @@
+.section-demolar {
+  background: rgb(72, 72, 72);
+}
+
+.demolar-elements {
+  padding-bottom: 50px;
+  @include mobile() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.demolar-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h2 {
+    color: rgb(205, 249, 47);
+    font-family: Poppins;
+    font-size: 141.72px;
+    font-weight: 600;
+    line-height: 126.42%;
+    letter-spacing: 0%;
+    text-align: center;
+    @include mobile() {
+      font-size: 100px;
+    }
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 41.06px;
+    font-weight: 600;
+    line-height: 126.42%;
+    letter-spacing: 0%;
+    text-align: center;
+    @include mobile() {
+      font-size: 30px;
+    }
+  }
+}
+
+.demolar-content {
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  gap: 74px;
+  @include mobile() {
+    flex-direction: column;
+  }
+  p {
+    @include media() {
+      text-align: center;
+    }
+    @include mobile() {
+      width: 250px;
+    }
+    width: 320px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 15.89px;
+    font-weight: 600;
+    line-height: 158%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  @include media() {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.demolar-contents {
+  display: flex;
+  align-items: center;
+  gap: 74px;
+  a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 240px;
+      color: rgb(255, 255, 255);
+      font-family: Poppins;
+      font-size: 14.57px;
+      font-weight: 500;
+      line-height: 126.42%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+  @include media() {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
