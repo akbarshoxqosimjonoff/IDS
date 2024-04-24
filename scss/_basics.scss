@@ -3,30 +3,30 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
   @include mobile() {
-    max-width: 430px;
+    max-width: 430px !important;
     padding: 0px 25px 0px 25px;
   }
   @include tablet() {
-    max-width: 1024px;
+    max-width: 1024px !important;
     padding: 0px 25px 0px 25px;
   }
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul {
-  list-style: none;
+  list-style: none !important;
 }
 
 li {
-  list-style: none;
+  list-style: none !important;
 }

@@ -1,0 +1,60 @@
+.download-elements {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-image: url("../images/section-download-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 700px 450px;
+  @include mobile() {
+    background-size: 300px;
+  }
+  h2 {
+    color: rgb(36, 36, 36);
+    font-family: Poppins;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 129%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 750px;
+    @include mobile() {
+      width: 350px;
+      font-size: 45px;
+    }
+  }
+  h3 {
+    color: rgb(119, 119, 119);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 129%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.download-btn {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    display: inline-block;
+    padding: 10px 45px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 15.55px;
+    font-weight: 700;
+    line-height: 129%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 34.35px;
+    background: rgb(36, 36, 36);
+  }
+}

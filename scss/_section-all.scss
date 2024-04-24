@@ -15,9 +15,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  width: 100%;
+  height: max-content;
+  gap: 32px;
+  padding: 0;
   @include mobile() {
     width: 270px;
+    margin: 0px !important;
   }
   .all-elements-cards-list {
     padding-top: 50px;
@@ -148,9 +152,10 @@
 .all-elements-cards-list-bottom_btn-mobile {
   display: none;
   @include mobile() {
-    display: inline-block;
+    display: block;
     a {
-      padding: 9px 50px;
+      display: inline-block;
+      padding: 9px 35px;
       border-radius: 68.06px;
       border: 2px solid rgb(204, 243, 0);
       background: rgb(204, 243, 0);

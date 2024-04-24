@@ -46,7 +46,8 @@
   margin-top: 57px;
   display: flex;
   align-items: center;
-  gap: 74px;
+  gap: 50px;
+  padding-left: 0;
   @include mobile() {
     flex-direction: column;
   }
@@ -57,7 +58,7 @@
     @include mobile() {
       width: 250px;
     }
-    width: 320px;
+    width: 350px;
     color: rgb(255, 255, 255);
     font-family: Poppins;
     font-size: 15.89px;
@@ -76,6 +77,7 @@
 .demolar-contents {
   display: flex;
   align-items: center;
+  padding-left: 0;
   gap: 74px;
   a {
     text-align: center;
