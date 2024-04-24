@@ -1,0 +1,642 @@
+.section-sotuv {
+  background-color: rgb(85, 85, 85);
+  backdrop-filter: blur(55px);
+  height: max-content;
+  padding-bottom: 34px;
+}
+
+.contact-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sotuv-elements {
+  display: flex;
+  padding-top: 33px;
+  // align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include tablet() {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  @include mobile() {
+    gap: 50px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  gap: 20px;
+  // border: 1px solid black;
+  @include tablet() {
+    width: 600px;
+  }
+  @include mobile() {
+    width: 325px;
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+    span {
+      color: blue;
+    }
+  }
+}
+
+.contact-email {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  input {
+    width: 498px;
+    height: 60px;
+    border-radius: 7px;
+    background: rgb(89, 89, 89);
+    border: 1px solid rgba(89, 89, 89);
+    @include tablet() {
+      width: 598px;
+    }
+    @include mobile() {
+      width: 325px;
+    }
+  }
+}
+
+.contact-phone {
+  label {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  input {
+    width: 498px;
+    height: 60px;
+    border-radius: 7px;
+    background: rgb(89, 89, 89);
+    border: 1px solid rgba(89, 89, 89);
+    @include tablet() {
+      width: 598px;
+    }
+    @include mobile() {
+      width: 325px;
+    }
+  }
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+
+.contact-payment {
+  @include mobile() {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  @include tablet() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 598px;
+  }
+  .credit-btn {
+    width: 240px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgba(89, 89, 89);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(183, 221, 47);
+    // color: rgb(89, 89, 89);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    padding: 15px 20px 20px 75px;
+    @include mobile() {
+      padding: 15px 20px 15px 20px;
+    }
+  }
+  .credit-btn:hover {
+    background-color: #fff;
+    color: black;
+  }
+  .payment-btn {
+    width: 240px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgba(89, 89, 89);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(89, 89, 89);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    // text-align: left;
+    cursor: pointer;
+    padding: 15px 20px 20px 90px;
+    @include mobile() {
+      padding: 15px 20px 15px 20px;
+    }
+  }
+  .payment-btn:hover{
+    background: rgb(183, 221, 47);
+  }
+}
+
+.contact-card-num {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  @include tablet() {
+    width: 598px;
+    justify-content: space-between;
+    // gap: 0;
+  }
+  @include mobile() {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+.card-num-input_card-num {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  input {
+    border-radius: 5px;
+    border: 1px solid rgb(89, 89, 89);
+    padding: 14px;
+    background: rgb(89, 89, 89);
+    width: 230px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+    @include mobile() {
+      width: 320px;
+    }
+  }
+}
+
+.card-mm_yy-input {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  input {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(89, 89, 89);
+    background: rgb(89, 89, 89);
+    padding: 14px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.card-cvc-input {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  input {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(89, 89, 89);
+
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 14px;
+    border: 1px solid rgb(89, 89, 89);
+  }
+}
+
+.contact-card-holder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @include tablet() {
+    width: 598px;
+    justify-content: space-between;
+  }
+  @include mobile() {
+    gap: 5px;
+  }
+}
+
+.card-holder-input {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  input {
+    width: 370px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    padding: 14px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+    background: rgb(89, 89, 89);
+    @include mobile() {
+      width: 212px;
+    }
+  }
+}
+
+.card-holder-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 15 px;
+  h3 {
+    color: rgb(183, 221, 46);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.contact-accept {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  h3 {
+    color: rgb(171, 170, 170);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.accept-cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-agree {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-agree-text {
+  h3 span {
+    color: blue;
+  }
+}
+
+.contact-pay_now-btn {
+  button {
+    width: 498px;
+    border-radius: 7px;
+    height: 50px;
+    background: rgba(205, 249, 47, 0.86);
+    border: 1px solid rgb(205, 249, 47, 0.86);
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    @include tablet() {
+      width: 598px;
+    }
+    @include mobile() {
+      width: 325px;
+    }
+  }
+}
+
+// order
+
+.order {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-text {
+  h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.order-card_1 {
+  // margin-top: 28px;
+  // padding-bottom: 20px;
+  width: 598px;
+  border-radius: 15px;
+  background: rgba(89, 89, 89, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  hr {
+    border: 1px solid rgb(171, 170, 170);
+    width: 548px;
+    height: 1px;
+    margin-left: 25px;
+  }
+  @include mobile() {
+    width: 325px;
+    hr {
+      // display: none;
+      width: 275px;
+    }
+  }
+}
+.order-card_1-text_1 {
+  display: flex;
+  h3 {
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 132%;
+    letter-spacing: 0%;
+    // text-align: left;
+    text-decoration-line: underline;
+    width: 300px;
+  }
+  @include mobile() {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.order-card_1-tex_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  h3 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  span {
+    color: rgb(183, 221, 46);
+  }
+}
+
+.order-card_1-tex_2-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  h4 {
+    color: rgb(148, 148, 147);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: line-through;
+  }
+  h3 {
+    color: rgb(183, 221, 46);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.order-card_1-text_3 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.order-card_1-text_3-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.order-card_1-text_3-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  h4 {
+    color: rgb(148, 148, 147);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: line-through;
+  }
+  h3 {
+    color: rgb(183, 221, 46);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.order-promocode {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  h3 {
+    color: rgb(109, 109, 255);
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+}
+
+.order-handing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.handing-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.handing-price {
+  h3 {
+    color: rgb(183, 221, 46);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.order-total {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .order-total-price {
+    color: rgb(183, 221, 46);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
