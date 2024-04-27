@@ -1737,6 +1737,20 @@ footer {
   width: 500px;
   gap: 50px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ids-shablonlar-texts {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-texts {
+    width: 330px;
+    align-items: center;
+    text-align: center;
+  }
+}
 .ids-shablonlar-texts h2 {
   color: rgb(205, 249, 47);
   font-family: Poppins;
@@ -1744,6 +1758,12 @@ footer {
   font-weight: 800;
   line-height: 126.42%;
   letter-spacing: 0%;
+}
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-texts h2 {
+    text-align: center;
+    font-size: 90px;
+  }
 }
 .ids-shablonlar-texts h3 {
   color: rgb(255, 255, 255);
@@ -1772,6 +1792,15 @@ footer {
   gap: 15px;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-texts .ids-shablonlar-texts-ul_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
 
 .ids-shablonlar-img-bg {
   width: 84px;
@@ -1793,6 +1822,11 @@ footer {
   justify-content: space-between;
   padding: 35px;
 }
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-menu {
+    width: 100%;
+  }
+}
 .ids-shablonlar-menu ul {
   display: flex;
   justify-content: space-between;
@@ -1806,6 +1840,11 @@ footer {
   letter-spacing: 0%;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-menu li a {
+    font-size: 14px;
+  }
+}
 
 .ids-shablonlar-elements {
   display: flex;
@@ -1813,11 +1852,23 @@ footer {
   padding-top: 100px;
   margin-bottom: 60px !important;
 }
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .ids-shablonlar-elements {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .ids-shablonlar-imgs {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-imgs {
+    flex-direction: column;
+  }
 }
 .ids-shablonlar-imgs img {
   width: 330px;
@@ -1861,6 +1912,18 @@ footer {
   text-align: center;
   width: 1000px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ids-web-text h2 {
+    width: 700px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ids-web-text h2 {
+    width: 330px;
+    font-size: 23px;
+  }
+}
 
 .ids-web-about {
   padding-top: 60px;
@@ -1874,6 +1937,17 @@ footer {
   justify-content: center;
   gap: 15px;
 }
+@media screen and (max-width: 767px) {
+  .ids-web-about ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ids-web-about ul {
+    gap: 0px;
+  }
+}
 .ids-web-about ul li a {
   width: 250px;
   display: flex;
@@ -1881,6 +1955,11 @@ footer {
   align-items: center;
   text-align: center;
   gap: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ids-web-about ul li a {
+    width: 240px;
+  }
 }
 .ids-web-about ul li a h3 {
   color: rgb(255, 255, 255);
@@ -1890,6 +1969,11 @@ footer {
   line-height: 129%;
   letter-spacing: 0%;
   text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ids-web-about ul li a h3 {
+    font-size: 19px;
+  }
 }
 
 .ids-web-btns {
@@ -1904,7 +1988,22 @@ footer {
   width: 110%;
   padding-left: 400px;
 }
+@media screen and (max-width: 767px) {
+  .ids-web-btns {
+    padding-left: 0;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ids-web-btns {
+    width: 102%;
+    overflow-x: scroll;
+  }
+}
 
+.ids-web-btn {
+  display: inline-block;
+}
 .ids-web-btn a {
   display: inline-block;
   display: flex;
@@ -1925,6 +2024,16 @@ footer {
   line-height: 112%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .ids-shablonlar-elements-footer {
+    height: 300px;
+    width: 100% px;
+  }
+}
+.ids-shablonlar-elements-footer .footer-elements {
+  width: 100%;
 }
 
 .section-ask {
@@ -2100,7 +2209,8 @@ footer {
 
 @media screen and (max-width: 767px) {
   footer {
-    max-height: 100px;
+    height: 100px;
+    width: 100%;
   }
 }
 
@@ -2109,6 +2219,14 @@ footer {
   align-items: center;
   justify-content: space-between;
   height: 83px;
+}
+@media screen and (max-width: 767px) {
+  .footer-elements-asc {
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    gap: 20px;
+  }
 }
 .footer-elements-asc h4 {
   color: rgb(255, 255, 255);
@@ -2124,6 +2242,11 @@ footer {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .footer-elements-asc ul {
+    gap: 5px;
+  }
 }
 
 .section-sotuv {

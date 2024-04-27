@@ -174,7 +174,8 @@
 
 footer {
   @include mobile() {
-    max-height: 100px;
+    height: 100px;
+    width: 100%;
   }
 }
 
@@ -183,6 +184,12 @@ footer {
   align-items: center;
   justify-content: space-between;
   height: 83px;
+  @include mobile() {
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    gap: 20px;
+  }
   h4 {
     color: rgb(255, 255, 255);
     font-family: Poppins;
@@ -197,5 +204,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
+    @include mobile() {
+      gap: 5px;
+    }
   }
 }

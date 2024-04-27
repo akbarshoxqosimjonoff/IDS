@@ -3,6 +3,16 @@
   flex-direction: column;
   width: 500px;
   gap: 50px;
+  @include tablet() {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  @include mobile() {
+    width: 330px;
+    align-items: center;
+    text-align: center;
+  }
   h2 {
     color: rgb(205, 249, 47);
     font-family: Poppins;
@@ -11,6 +21,10 @@
     line-height: 126.42%;
     letter-spacing: 0%;
     // text-align: center;
+    @include mobile() {
+      text-align: center;
+      font-size: 90px;
+    }
   }
   h3 {
     color: rgb(255, 255, 255);
@@ -31,6 +45,9 @@
     text-align: left;
   }
   ul {
+    @include mobile() {
+      // flex-direction: column;
+    }
     display: flex;
     gap: 15px;
     align-items: center;
@@ -38,6 +55,15 @@
       display: flex;
       gap: 15px;
       align-items: center;
+    }
+  }
+  .ids-shablonlar-texts-ul_1 {
+    @include mobile() {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
     }
   }
 }
@@ -54,6 +80,9 @@
 .ids-shablonlar-menu {
   width: 375px;
   height: 270px;
+  @include mobile() {
+    width: 100%;
+  }
   box-sizing: border-box;
   border-radius: 27.57px;
   background: linear-gradient(
@@ -78,6 +107,9 @@
     line-height: 129%;
     letter-spacing: 0%;
     text-align: center;
+    @include mobile() {
+      font-size: 14px;
+    }
   }
 }
 
@@ -87,15 +119,34 @@
   justify-content: space-between;
   padding-top: 100px;
   margin-bottom: 60px !important;
+  @include media() {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .ids-shablonlar-imgs {
   display: flex;
   align-items: center;
   gap: 40px;
+  @include mobile() {
+    flex-direction: column;
+  }
   img {
     width: 330px;
   }
+  // @include tablet() {
+  //   width: 330px;
+  //   flex-wrap: wrap;
+  // }
 }
+
+// .ids-shablonlar-imgs-num3 {
+//   @include tablet() {
+//     display: flex;
+//     width: 660px;
+//   }
+// }
 
 .ids-shablonlar-img {
   display: flex;
@@ -103,6 +154,10 @@
   align-items: center;
   padding-top: 30px;
   gap: 40px;
+  // @include tablet() {
+  //   width: 400px;
+  //   flex-wrap: wrap;
+  // }
 }
 
 // ids-web
@@ -133,6 +188,14 @@
     letter-spacing: 0%;
     text-align: center;
     width: 1000px;
+    @include tablet() {
+      width: 700px;
+      font-size: 50px;
+    }
+    @include mobile() {
+      width: 330px;
+      font-size: 23px;
+    }
   }
 }
 
@@ -142,10 +205,17 @@
   justify-content: center;
   align-items: center;
   ul {
+    @include mobile() {
+      flex-direction: column;
+      gap: 40px;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+    @include tablet() {
+      gap: 0px;
+    }
     li {
       a {
         width: 250px;
@@ -154,6 +224,9 @@
         align-items: center;
         text-align: center;
         gap: 5px;
+        @include tablet() {
+          width: 240px;
+        }
         h3 {
           color: rgb(255, 255, 255);
           font-family: Poppins;
@@ -162,6 +235,9 @@
           line-height: 129%;
           letter-spacing: 0%;
           text-align: center;
+          @include tablet() {
+            font-size: 19px;
+          }
         }
       }
     }
@@ -181,11 +257,22 @@
   overflow-x: scroll;
   width: 110%;
   padding-left: 400px;
+  @include mobile() {
+    // width: 100%;
+    // padding-left: 450px;
+    padding-left: 0;
+    flex-direction: column;
+  }
+  @include tablet() {
+    width: 102%;
+    // padding-left: 940px;
+    overflow-x: scroll;
+  }
 }
 .ids-web-btn {
+  display: inline-block;
   a {
     display: inline-block;
-    // padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,5 +291,20 @@
       letter-spacing: 0%;
       text-align: center;
     }
+  }
+}
+
+// .ids-web-btn-num3 {
+//   width: 200px;
+//   display: inline-block;
+// }
+
+.ids-shablonlar-elements-footer {
+  @include mobile() {
+    height: 300px;
+    width: 100%px;
+  }
+  .footer-elements {
+    width: 100%;
   }
 }
