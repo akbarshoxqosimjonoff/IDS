@@ -2043,7 +2043,6 @@ footer {
   letter-spacing: 0%;
   text-align: center;
 }
-
 @media screen and (max-width: 767px) {
   .ids-shablonlar-elements-footer {
     height: 300px;
@@ -2068,6 +2067,11 @@ footer {
 .carousel-item {
   width: 100%;
   padding: 0 500px !important;
+}
+@media screen and (max-width: 767px) {
+  .carousel-item {
+    padding: 0 50px !important;
+  }
 }
 
 .carousel-container {

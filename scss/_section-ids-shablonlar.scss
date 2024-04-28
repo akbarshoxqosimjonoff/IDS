@@ -289,6 +289,9 @@
       text-align: center;
     }
   }
+  @include mobile(){
+
+  }
 }
 
 .ids-shablonlar-elements-footer {
@@ -314,6 +317,9 @@
 .carousel-item {
   width: 100%;
   padding: 0 500px !important;
+  @include mobile(){
+    padding: 0 50px !important;
+  }
 }
 
 .carousel-container {
