@@ -61,8 +61,6 @@
   margin: 0 auto;
 }
 
-
-
 .header-elements {
   display: flex;
   flex-direction: column;
@@ -219,7 +217,7 @@
 }
 
 .r-buttons {
-  padding-top: 30px;
+  padding-top: 40px;
   display: flex;
   gap: 57px;
 }
@@ -303,7 +301,6 @@
 }
 
 .header-buttons {
-margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -318,6 +315,13 @@ margin-top: 30px;
     flex-direction: column-reverse;
   }
 }
+ul{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
 
 @media screen and (max-width: 767px) {
   .header-buttons {
@@ -346,8 +350,6 @@ margin-top: 30px;
   color: white;
   border: none;
 }
-
-
 
 .cate {
   padding-top: 20px;

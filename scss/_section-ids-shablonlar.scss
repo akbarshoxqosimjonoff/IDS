@@ -253,10 +253,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  overflow-x: scroll;
-  width: 110%;
-  padding-left: 400px;
+  gap: 200px;
+  // width: 110%;
   @include mobile() {
     // width: 100%;
     // padding-left: 450px;
@@ -270,15 +268,14 @@
   }
 }
 .ids-web-btn {
-  display: inline-block;
   a {
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
-    height: 50px;
+    width: 295px;
+    padding: 11px 62px;
     border-radius: 30.01px;
     background: rgba(217, 217, 217, 0.14);
     h3 {
@@ -294,11 +291,6 @@
   }
 }
 
-// .ids-web-btn-num3 {
-//   width: 200px;
-//   display: inline-block;
-// }
-
 .ids-shablonlar-elements-footer {
   @include mobile() {
     height: 300px;
@@ -307,4 +299,23 @@
   .footer-elements {
     width: 100%;
   }
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.1s ease-in;
+}
+.carousel-item {
+  width: 100%;
+  padding: 0 500px !important;
+}
+
+.carousel-container {
+  width: 100%;
 }
