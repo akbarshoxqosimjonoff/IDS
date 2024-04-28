@@ -62,9 +62,16 @@ ul {
 
 .navEL {
   margin-bottom: 0;
+  display: flex;
+  gap: 25px !important;
 }
-.navEL li {
-  width: 90px;
+
+li:hover {
+  cursor: pointer;
+  background: radial-gradient(100% 100% at 50% 100%, #cdf92f 0%, rgba(205, 249, 47, 0) 45.93%);
+}
+li:hover a {
+  color: #cdf92f;
 }
 
 .header-elements {
@@ -73,8 +80,8 @@ ul {
 .header-elements nav {
   padding-top: 9px !important;
   display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo h1 {
@@ -89,10 +96,29 @@ ul {
   margin-bottom: 0 !important;
 }
 
+/* Dropdown button */
+.dropdown-menu {
+  background-color: transparent !important; /* Backgroundni yoq qilish */
+  border: none !important; /* Chegaralarni yoq qilish */
+  color: white !important;
+  text-align: center !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+  cursor: pointer !important;
+  background: radial-gradient(100% 100% at 50% 100%, #cdf92f 0%, rgba(205, 249, 47, 0) 45.93%) !important;
+  color: #cdf92f !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
 .nav-navbar {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
+  gap: 112px;
 }
 .nav-navbar a {
   color: rgb(255, 255, 255);
@@ -104,8 +130,6 @@ ul {
   text-align: center;
 }
 .nav-navbar ul {
-  display: flex;
-  gap: 17px;
   align-items: center;
 }
 
