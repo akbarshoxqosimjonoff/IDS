@@ -130,17 +130,17 @@ li:hover {
       z-index: 99999;
     }
     ul {
-      z-index: 9999;
+      z-index: 9999 !important;
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(41, 121, 43, 0.34);
+      background: rgba(0, 0, 0, 0.569);
       justify-content: center;
       flex-direction: column;
       align-items: flex-start;
       padding-bottom: 5vh;
       padding-left: 40px !important;
-      width: 70%;
+      width: 80%;
       height: 100vh;
       transform: translateX(-100%);
       transition: all 0.5s;

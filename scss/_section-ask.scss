@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   // height: 900px;
 }
 
@@ -51,7 +52,6 @@
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.21);
   border-radius: 18px;
-  backdrop-filter: blur(6.2px);
   background: linear-gradient(
     135.29deg,
     rgba(255, 255, 255, 0.15) 0.565%,
