@@ -108,6 +108,10 @@ li:hover a {
   text-align: center !important;
 }
 
+.dropdown-menu .show {
+  background: linear-gradient(138.42deg, rgba(255, 255, 255, 0.6) -36.03%, rgba(255, 255, 255, 0.2) 113.8%);
+}
+
 .nav-link:hover {
   color: white !important;
   cursor: pointer !important;
